@@ -9,8 +9,6 @@
 Стрельба - Пробел
 
 
-
-
 Использованы внешние Assets  
 Joystick Pack, Joystick Pack
 

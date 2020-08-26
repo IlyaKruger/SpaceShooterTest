@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New PlayerState", menuName = "Player State", order = 51)]
 public class PlayerState : ScriptableObject
 {
-
     [SerializeField]
     private float angleMove = 4;
     [SerializeField]
@@ -21,7 +20,6 @@ public class PlayerState : ScriptableObject
     [SerializeField]
     private float maxZ = 8;
 
-
     public float AngleMove
     {
         get
@@ -29,7 +27,6 @@ public class PlayerState : ScriptableObject
             return angleMove;
         }
     }
-
     public float FireDelta
     {
         get
@@ -72,6 +69,4 @@ public class PlayerState : ScriptableObject
             return maxZ;
         }
     }
-
-
 }

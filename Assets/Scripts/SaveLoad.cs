@@ -22,7 +22,5 @@ public class SaveLoad : MonoBehaviour
                 LevelData.SetLevelState(i, PlayerPrefs.GetString(i.ToString()));
             }
         }
-
     }
-
 }

@@ -18,11 +18,8 @@ public class GameController : MonoBehaviour
     public float spawnWait;
     public float startWait;
     protected JoyButton joyButton;
-
-
     private void Update()
     {
-
         if (winLoseText.gameObject.activeSelf == true)
         {
             if (Input.GetKeyDown(KeyCode.Space) || joyButton.pressed == true)
@@ -32,7 +29,6 @@ public class GameController : MonoBehaviour
                 SceneManager.LoadScene(0);
             }
         }
-
     }
 
     private void Start()
@@ -44,7 +40,6 @@ public class GameController : MonoBehaviour
         LifeUpdate();
         StartCoroutine(SpwanEnemyWaves());
     }
-
     IEnumerator SpwanEnemyWaves()
     {
         yield return new WaitForSeconds(startWait);
@@ -61,7 +56,6 @@ public class GameController : MonoBehaviour
         score += 50;
         UpdateScore();
     }
-
     public void LifeMinus()
     {
         lifes -= 1;

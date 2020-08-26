@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     private float nextFire;
     private void Awake()
     {
-
         player = GetComponent<Rigidbody>();
         joystick = FindObjectOfType<Joystick>();
         joyButton = FindObjectOfType<JoyButton>();
@@ -36,7 +35,6 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
         player = GetComponent<Rigidbody>();
         player.velocity = new Vector3(joystick.Horizontal * 5f, 0, joystick.Vertical * 5f);
         player.position = new Vector3(Mathf.Clamp(player.position.x, minX, maxX), 0, Mathf.Clamp(player.position.z, minZ, maxZ));
@@ -51,7 +49,6 @@ public class PlayerController : MonoBehaviour
             player.position = new Vector3(Mathf.Clamp(player.position.x, minX, maxX), 0, Mathf.Clamp(player.position.z, minZ, maxZ));
             player.rotation = Quaternion.Euler(0, 0, player.velocity.x * -angle);
         }
-
     }
 
     private void Update()

@@ -16,10 +16,8 @@ public class DestroyByCollision : MonoBehaviour
             gameController = gameControllerObject.GetComponent<GameController>();
         }
     }
-
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.tag == "Player")
         {
             Instantiate(hitPlayer, transform.position, transform.rotation);

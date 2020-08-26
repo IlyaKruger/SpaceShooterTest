@@ -6,7 +6,6 @@ public class RandomRotate : MonoBehaviour
 {
     public float tumble;
     Rigidbody asteroid;
-
     private void Awake()
     {
         tumble = 5;

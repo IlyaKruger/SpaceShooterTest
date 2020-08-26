@@ -12,7 +12,6 @@ public class MenuController : MonoBehaviour
     public Button level2Button;
     public Button level3Button;
     public SaveLoad saveLoad;
-
     private Button[] levelsButton;
     private Text[] levelsText;
     private void Awake()
@@ -40,16 +39,7 @@ public class MenuController : MonoBehaviour
                 levelsText[i - 1].color = Color.black;
             }
         }
-
     }
-
-    private void Start()
-    {
-
-    }
-
-
-
     public void Quit()
     {
         Application.Quit();

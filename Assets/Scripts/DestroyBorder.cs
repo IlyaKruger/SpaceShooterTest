@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DestroyBorder : MonoBehaviour
 {
-
     private void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);

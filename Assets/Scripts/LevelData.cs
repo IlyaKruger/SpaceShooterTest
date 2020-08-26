@@ -4,7 +4,6 @@ using UnityEngine;
 
 public static class LevelData
 {
-
     public static int targetLevel = 1;
     static Dictionary<int, string> levelState = new Dictionary<int, string>()
     {
@@ -17,12 +16,10 @@ public static class LevelData
      Зеленый - пройден
      Черный - закрыт
          */
-
     public static string GetLevelState(int level)
     {
         return levelState[level];
     }
-
     public static void SetLevelState(int level, string state)
     {
         levelState[level] = state;
